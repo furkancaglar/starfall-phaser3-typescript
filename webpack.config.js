@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: './src/main.ts',
+        app: './src/game.ts',
         // vendors: ['phaser'],
     },
 
@@ -42,9 +42,9 @@ module.exports = {
                 {
                     from: 'index.html',
                 },
-                // {
-                //     from: 'assets/**/*',
-                // },
+                {
+                    from: 'assets/**/*',
+                },
             ],
         }),
         new webpack.DefinePlugin({
