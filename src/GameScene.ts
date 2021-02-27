@@ -97,7 +97,7 @@ export default class GameScene extends Phaser.Scene {
         const y = 26;
         star = this.physics.add.image(x, y, this.imgKeyStar);
         star.setDisplaySize(50, 50);
-        star.setVelocity(0, 100);
+        star.setVelocity(0, 150);
         star.setInteractive();
         star.on('pointerdown', this.onClick(star), this);
         this.physics.add.collider(star, this.sand,
