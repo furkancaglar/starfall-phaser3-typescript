@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Furkan Caglar",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
   "devDependencies": {
     "copy-webpack-plugin": "^7.0.0",
     "ts-loader": "^8.0.17",
