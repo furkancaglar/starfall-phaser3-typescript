@@ -1,6 +1,8 @@
 import * as Phaser from 'phaser';
 
 import GameScene from './GameScene';
+import WelcomeScene from "./WelcomeScene";
+import ScoreScene from "./ScoreScene";
 
 const gameConfig: Phaser.Types.Core.GameConfig = {
     title: 'Sample',
@@ -19,7 +21,7 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
         },
     },
 
-    scene: [GameScene],
+    scene: [WelcomeScene ,GameScene, ScoreScene],
 
     parent: 'game',
     backgroundColor: '#000033',
