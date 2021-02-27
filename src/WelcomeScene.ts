@@ -1,11 +1,12 @@
 import "phaser";
+import {GameSceneKeyName, WelcomeSceneKeyName} from "./consts";
 
 export default class WelcomeScene extends Phaser.Scene {
     title: Phaser.GameObjects.Text;
     hint: Phaser.GameObjects.Text;
     constructor() {
         super({
-            key: "WelcomeScene"
+            key: WelcomeSceneKeyName
         });
     }
     create(): void {
@@ -16,7 +17,7 @@ export default class WelcomeScene extends Phaser.Scene {
         this.hint = this.add.text(300, 350, hintText,
             { font: '24px Arial Bold', color: '#FBFBAC' });
         this.input.on('pointerdown', function (/*pointer*/) {
-            this.scene.start("GameScene");
+            this.scene.start(GameSceneKeyName);
         }, this);
     }
 };

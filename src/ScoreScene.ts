@@ -1,4 +1,5 @@
 import "phaser";
+import {ScoreSceneKeyName, WelcomeSceneKeyName} from "./consts";
 
 export default class ScoreScene extends Phaser.Scene {
     score: number;
@@ -6,7 +7,7 @@ export default class ScoreScene extends Phaser.Scene {
     hint: Phaser.GameObjects.Text;
     constructor() {
         super({
-            key: "ScoreScene"
+            key: ScoreSceneKeyName
         });
     }
     init(params: { starsCaught: number }): void {
@@ -20,7 +21,7 @@ export default class ScoreScene extends Phaser.Scene {
         this.hint = this.add.text(300, 350, hintText,
             { font: '24px Arial Bold', color: '#FBFBAC' });
         this.input.on('pointerdown', function (/*pointer*/) {
-            this.scene.start("WelcomeScene");
+            this.scene.start(WelcomeSceneKeyName);
         }, this);
     }
 };

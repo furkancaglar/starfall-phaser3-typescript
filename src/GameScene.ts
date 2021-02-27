@@ -1,5 +1,7 @@
 import "phaser";
 
+import {GameSceneKeyName, ScoreSceneKeyName} from "./consts";
+
 export default class GameScene extends Phaser.Scene {
     imgKeySky: string;
     imgPathSky: string;
@@ -17,7 +19,7 @@ export default class GameScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'GameScene'
+            key: GameSceneKeyName
         });
     }
     init(params): void {
@@ -85,7 +87,7 @@ export default class GameScene extends Phaser.Scene {
             this.time.delayedCall(100, function (star) {
                 star.destroy();
                 if (this.starsFallen > 2) {
-                    this.scene.start("ScoreScene",
+                    this.scene.start(ScoreSceneKeyName,
                         { starsCaught: this.starsCaught });
                 }
             }, [star], this);
