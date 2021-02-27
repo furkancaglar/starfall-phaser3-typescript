@@ -1,0 +1,8 @@
+{
+  "name": "firs-phaser-game",
+  "version": "1.0.0",
+  "description": "First game tryout with Phaser",
+  "main": "index.js",
+  "author": "Furkan Caglar",
+  "license": "MIT"
+}
