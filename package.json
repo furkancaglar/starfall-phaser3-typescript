@@ -1,7 +1,7 @@
 {
-  "name": "firs-phaser-game",
+  "name": "starfall-phaser3-typescript",
   "version": "1.0.0",
-  "description": "First game tryout with Phaser",
+  "description": "First game tryout with Phaser3",
   "main": "index.js",
   "author": "Furkan Caglar",
   "license": "MIT",

@@ -6,7 +6,6 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
         app: './src/game.ts',
-        // vendors: ['phaser'],
     },
 
     module: {
